@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
+    <title>Tierra Extraña<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/all.css">
+    <link href='http://fonts.googleapis.com/css?family=Arvo|Open+Sans:300,600|Merienda' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery.balanced-gallery.min.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+      $('#myGallery').BalancedGallery({ idealHeight: 200, background: 'rgba(0,0,0,0.3)' });
+      $('.tebies').BalancedGallery({ idealHeight: 200, padding: 5, background: 'rgba(0,0,0,0.3)' });
+
+      $(".tabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+      });
+      $("a#click").click()
+    });
+    </script>
+  </head>
+  <body>
+
+    <div id="main" role="main">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>
