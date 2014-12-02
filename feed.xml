@@ -5,7 +5,7 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2012-01-01T00:00:00+00:00</updated>
+  <updated>2012-01-01T01:00:00+01:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
@@ -13,8 +13,8 @@
     <title>Example Article</title>
     <link rel="alternate" href="http://blog.url.com/2012/01/01/example-article.html"/>
     <id>http://blog.url.com/2012/01/01/example-article.html</id>
-    <published>2012-01-01T00:00:00+00:00</published>
-    <updated>2014-09-04T11:59:33+01:00</updated>
+    <published>2012-01-01T01:00:00+01:00</published>
+    <updated>2014-09-04T12:59:33+02:00</updated>
     <author>
       <name>Article Author</name>
     </author>
